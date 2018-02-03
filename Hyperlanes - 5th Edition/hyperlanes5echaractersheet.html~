@@ -42,7 +42,7 @@
         <div class="pcinfocontainer">
             <div class="pcabilityscorecontainer">
                 <div class="pcstrengthabilitymodifier">
-                    <input class="pcstrengthabilitymodifier" type="text">
+                    <input class="pcstrengthabilitymodifier" type="text" value="[[@{pcstrengthabilityscore}-10]/2]">
                 </div>
                 <div class="pcstrengthabilityscore">
                     <input class="pcstrengthabilityscore" title="pcstrengthabilityscore" type="text">
