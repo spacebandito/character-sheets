@@ -1,0 +1,79 @@
+<html>
+<div class="system-title"><header><h1>Helheim Unbound</h1></header></div>
+<div class="champion-name-container">
+	<div class="name-container">
+		<label for="champion-name">Champion Name</label>
+	   <input class="champion-name" name="attr_character_name" title="@{character_name}" type="text"></div>
+	<div class="player-container">
+		<label for="player-name">Player Name</label>
+	   <input class="player-name" name="attr_player_name" title="@{player_name}" type="text"></div>
+</div>
+<div class="modifier-container">
+	<div class="modifier-benefit-container">
+		<label for="modifier-benefit-pool">Benefit Modifier</label><input type="number" class="modifier-benefit-pool" name="attr_modifier_benefit_pool" title="@{modifier_benefit_pool}" value="0">
+		<label for="modifier-hindrance-pool">Hindrance Modifier</label><input type="number" class="modifier-hindrance-pool" name="attr_modifier_hindrance_pool" title="@{modifier_hindrance_pool" value="0">
+	</div>
+</div>
+<div class="Champion-sheet-toggle-container">
+	<label for="champion-info-toggle">Champion Info</label><input class="champion-info-toggle" type="radio" name="attr_champion_sheet_toggle" title="@{champion_info_toggle}" value="show-champion-info-container">
+	<label for="champion-stat-toggle">Champion Stats</label><input class="champion-stat-toggle" type="radio" name="attr_champion_sheet_toggle" title="@{champion_info_toggle}" value="show-champion-stat-container">	
+</div>
+	<div class="champion-info-container" id="champion-info-toggle">
+		<div class="gender-container">
+			<label for="gender-info">Gender</label>
+	   	<input class="gender-info" name="attr_gender_info" title="@{gender_info}" type="text"></div>
+		<div class="race-container">
+			<label for="race-info">Race</label>
+	   	<input class="race-info" name="attr_race_info" title="@{race_info}" type="text"></div>
+		<div class="height-container">
+			<label for="height-info">Height</label>
+	   	<input class="height-info" name="attr_height_info" title="@{height_info}" type="text"></div>
+		<div class="weight-container">
+			<label for="champion-name">Weight</label>
+	   	<input class="weight-info" name="attr_weight_info" title="@{weight_info}" type="text"></div>
+		<div class="age-container">
+			<label for="age-info">Age</label>
+	   	<input class="age-info" name="attr_age_info" title="@{age_info}" type="text"></div>
+		<div class="birthdate-container">
+			<label for="birthdate-info">Birthdate</label>
+	   	<input class="birthdate-info" name="attr_birthdate_info" title="@{birthdate-info}" type="text"></div>
+		<div class="culture-container">
+			<label for="culture-info">Culture</label>
+	   	<input class="culture-info" name="attr_culture_info" title="@{culture_info}" type="text"></div>
+		<div class="languages-container">
+			<label for="languages-info">Languages</label>
+	   	<input class="languages-info" name="attr_languages_info" title="@{languages_info}" type="text"></div>
+		<div class="description-background-container">
+			<label for="description-background-info">Description & Background</label>
+			<input class="description-background-info" name="attr_description_background_info" title="@{description_background_info}" type="text"></div>
+		<div class="accomplished-deeds-container">
+			<label for="accomplished-deeds-info">Accomplished Deeds</label>
+			<input class="accomplished-deeds-info" name="attr_accomplished_deeds_info" title="@{accomplished_deeds_info}" type="text"></div>
+		<div class="desires-container">
+			<label for="desires-info">Desires</label>
+			<input class="desires-info" name="attr_desires_info" title="@{desires_info}" type="text"></div>
+		<div class="notes-container">
+			<label for="notes-info">Notes</label>
+			<input class="notes-info" name="attr_notes_info" title="@{notes_info}" type="text"></div>
+	</div>
+	<div class="champion-stat-container" id="champion-stat-toggle">
+	    <div class="champion-skills-container">
+	        <table class="champion-skills-table">
+	            <tr class="champion-skills-header-row">
+	                <th class="champion-skill-name-header">Skill</th>
+	                <th class="champion-skill-description-header">Description</th>
+	                <th class="champion-skill-breadth-header">Breadth</th>
+	                <th class="champion-skill-dice-header">Dice</th>
+	                <th class="champion-skill-trials-header">Trials</th>
+	           </tr>
+	           <tr class="champion-skill-one-container">
+	               <td class="champion-skill-one-container-name"><input class="champion-skill-one-name" name="attr_champion_skill_one_name" title="@{champion_skill_one_name}" type="text"></td>
+	               <td class="champion-skill-one-container-description"></td>
+	               <td class="champion-skill-one-container-breadth"></td>
+	               <td class="champion-skill-one-container-dice"></td>
+	               <td class="champion-skill-one-container-trials"></td>
+	           </tr>
+	        </table>
+	    </div>
+	</div>
+</html>
