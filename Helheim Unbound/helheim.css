@@ -1,0 +1,180 @@
+.sheet-culture-info {
+    resize: both;
+    overflow: auto;
+    height: 20px;
+    Width: 300px;
+}
+
+.sheet-languages-info {
+    resize: both;
+    overflow: auto;
+    height: 20px;
+    Width: 300px;
+}
+
+.sheet-description-background-info {
+    resize: both;
+    overflow: auto;
+    Width: 100%;
+}
+
+.sheet-accomplished-deeds-info {
+    resize: both;
+    overflow: auto;
+    Width: 100%;
+}
+
+.sheet-desires-info {
+    resize: both;
+    overflow: auto;
+    Width: 100%;
+}
+
+.sheet-notes-info {
+    resize: both;
+    overflow: auto;Width: 100%;
+}
+
+.sheet-champion-wound-table th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+    text-align: left;
+}
+
+.sheet-champion-wound-table-title {
+    text-align: center !important;
+}
+
+.sheet-champion-numberstat-table {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+    text-align: center;
+}
+
+.sheet-champion-skills-table th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+    text-align: left;
+}
+
+.sheet-champion-skill-one-name {
+    width: 200px;
+}
+
+.sheet-champion-skill-two-name {
+    width: 200px;
+}
+
+.sheet-champion-skill-three-name {
+    width: 200px;
+}
+
+.sheet-champion-skill-four-name {
+    width: 200px;
+}
+
+.sheet-champion-skill-five-name {
+    width: 200px;
+}
+
+.sheet-champion-skill-six-name {
+    width: 200px;
+}
+
+.sheet-champion-skill-seven-name {
+    width: 200px;
+}
+
+.sheet-champion-skill-eight-name {
+    width: 200px;
+}
+.sheet-champion-skill-one-description {
+    resize: auto;
+    overflow: auto;
+    height: 20px;
+    Width: 100%;
+}
+
+.sheet-champion-skill-two-description {
+    resize: Auto;
+    overflow: auto;
+    height: 20px;
+    Width: 100%;
+}
+
+.sheet-champion-skill-three-description {
+    resize: Auto;
+    overflow: auto;
+    height: 20px;
+    Width: 100%;
+}
+
+.sheet-champion-skill-four-description {
+    resize: Auto;
+    overflow: auto;
+    height: 20px;
+    Width: 100%;
+}
+
+.sheet-champion-skill-five-description {
+    resize: Auto;
+    overflow: auto;
+    height: 20px;
+    Width: 100%;
+}
+
+.sheet-champion-skill-six-description {
+    resize: Auto;
+    overflow: auto;
+    height: 20px;
+    Width: 100%;
+}
+
+.sheet-champion-skill-seven-description {
+    resize: Auto;
+    overflow: auto;
+    height: 20px;
+    Width: 100%;
+}
+
+.sheet-champion-skill-eight-description {
+    resize: Auto;
+    overflow: auto;
+    height: 20px;
+    Width: 100%;
+}
+
+.sheet-champion-skill-one-breadth {
+    width: 90px;
+}
+
+.sheet-champion-skill-two-breadth {
+    width: 90px;
+}
+
+.sheet-champion-skill-three-breadth {
+    width: 90px;
+}
+
+.sheet-champion-skill-four-breadth {
+    width: 90px;
+}
+
+.sheet-champion-skill-five-breadth {
+    width: 90px;
+}
+
+.sheet-champion-skill-six-breadth {
+    width: 90px;
+}
+
+.sheet-champion-skill-seven-breadth {
+    width: 90px;
+}
+
+.sheet-champion-skill-eight-breadth {
+    width: 90px;
+}

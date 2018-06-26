@@ -1,0 +1,287 @@
+<html>
+<div class="system-title"><header><h1>Helheim Unbound</h1></header></div>
+<br>
+<div class="champion-name-container">
+	<div class="name-container">
+		<label for="champion-name">Champion Name</label>
+	   <input class="champion-name" name="attr_character_name" title="@{character_name}" type="text"></div>
+	<br>
+	<div class="player-container">
+		<label for="player-name">Player Name</label>
+	   <input class="player-name" name="attr_player_name" title="@{player_name}" type="text"></div>
+</div>
+<br>
+<div class="modifier-container">
+	<div class="modifier-benefit-container">
+		<label for="modifier-benefit-pool">Benefit Modifier</label><input type="number" class="modifier-benefit-pool" name="attr_modifier_benefit_pool" title="@{modifier_benefit_pool}" value="0">
+		<br><br>	
+		<label for="modifier-hindrance-pool">Hindrance Modifier</label><input type="number" class="modifier-hindrance-pool" name="attr_modifier_hindrance_pool" title="@{modifier_hindrance_pool}" value="0">
+	</div>
+</div>
+<br>
+<div class="Champion-sheet-toggle-container" hidden="true">
+	<label for="champion-info-toggle">Champion Info</label><input class="champion-info-toggle" type="radio" name="attr_champion_sheet_toggle" title="@{champion_info_toggle}" value="show-champion-info-container">
+	<label for="champion-stat-toggle">Champion Stats</label><input class="champion-stat-toggle" type="radio" name="attr_champion_sheet_toggle" title="@{champion_info_toggle}" value="show-champion-stat-container">	
+	<div class="toggle-disclaimer">SHEET TOGGLE NOT CURRENTLY FUNCTIONAL</div>
+</div>
+	<div class="champion-info-container" id="champion-info-toggle">
+		<div class="gender-container">
+			<label for="gender-info">Gender</label>
+	   	<input class="gender-info" name="attr_gender_info" title="@{gender_info}" type="text"></div>
+	   	<br>
+		<div class="race-container">
+			<label for="race-info">Race</label>
+	   	<input class="race-info" name="attr_race_info" title="@{race_info}" type="text"></div>
+			<br>
+		<div class="height-container">
+			<label for="height-info">Height</label>
+	   	<input class="height-info" name="attr_height_info" title="@{height_info}" type="text"></div>
+			<br>
+		<div class="weight-container">
+			<label for="champion-name">Weight</label>
+	   	<input class="weight-info" name="attr_weight_info" title="@{weight_info}" type="text"></div>
+	   	<br>
+		<div class="age-container">
+			<label for="age-info">Age</label>
+	   	<input class="age-info" name="attr_age_info" title="@{age_info}" type="number"></div>
+	   	<br>
+		<div class="birthdate-container">
+			<label for="birthdate-info">Birthdate</label>
+	   	<input class="birthdate-info" name="attr_birthdate_info" title="@{birthdate-info}" type="text"></div>
+	   	<br>
+		<div class="culture-container">
+			<label for="culture-info">Culture</label>
+	   	<textarea class="culture-info" name="attr_culture_info" title="@{culture_info}"></textarea></div>
+		<div class="languages-container">
+			<label for="languages-info">Languages</label>
+	   	<textarea class="languages-info" name="attr_languages_info" title="@{languages_info}"></textarea></div>
+		<div class="description-background-container">
+			<label for="description-background-info">Description & Background</label>
+			<textarea class="description-background-info" name="attr_description_background_info" title="@{description_background_info}"></textarea></div>
+		<div class="accomplished-deeds-container">
+			<label for="accomplished-deeds-info">Accomplished Deeds</label>
+			<textarea class="accomplished-deeds-info" name="attr_accomplished_deeds_info" title="@{accomplished_deeds_info}"></textarea></div>
+		<div class="desires-container">
+			<label for="desires-info">Desires</label>
+			<textarea class="desires-info" name="attr_desires_info" title="@{desires_info}"></textarea></div>
+		<div class="notes-container">
+			<label for="notes-info">Notes</label>
+			<textarea class="notes-info" name="attr_notes_info" title="@{notes_info}"></textarea></div>
+	</div>
+	<div class="champion-stat-container" id="champion-stat-toggle">
+		<div class="champion-wound-container">
+			<table class="champion-wound-table">
+				<th class="champion-wound-table-title" colspan="3">Wounds</th>				
+				<tr>
+					<th class="injury-title">Injury</th></td>
+					<th class="hindrance-title">Hindrance</th></td>
+					<th class="tracking-title">Tracking</th></td>				
+				</tr>
+				<tr>
+					<td class="minor-listing">Minor (1-3)</td>
+					<td class="hindrance-blank-one"></td>
+					<td class="minor-tracking-checkoff">
+						<input type="checkbox" class="minor-tracking-one" name="attr_minor_tracking_one">
+	               	<input type="checkbox" class="minor-tracking-two" name="attr_minor_tracking_two">
+	               	<input type="checkbox" class="minor-tracking-three" name="attr_minor_tracking_three">				
+					</td>				
+				</tr>
+				<tr>
+					<td class="major-listing">Major (4-6)</td>
+					<td class="hindrance-blank-two">Standard (-)</td>
+					<td class="major-tracking-checkoff">
+						<input type="checkbox" class="major-tracking-one" name="attr_major_tracking_one">
+	               	<input type="checkbox" class="major-tracking-two" name="attr_major_tracking_two">
+	               	<input type="checkbox" class="major-tracking-three" name="attr_major_tracking_three">				
+					</td>				
+				</tr>	
+				<tr>
+					<td class="critical-listing">Critical (7-9)</td>
+					<td class="hindrance-blank-three">Dreadful (---)</td>
+					<td class="critical-tracking-checkoff">
+						<input type="checkbox" class="critical-tracking-one" name="attr_critical_tracking_one">
+	               	<input type="checkbox" class="critical-tracking-two" name="attr_critical_tracking_two">
+	               	<input type="checkbox" class="critical-tracking-three" name="attr_critical_tracking_three">				
+					</td>				
+				</tr>	
+				<tr>
+					<td class="overwhelmed-listing">Overwhelmed (10+)</td>
+					<td class="hindrance-blank-four">Dreadful (---) & Injury Trait</td>
+					<td class="overwhelmed-tracking-checkoff">
+						<input type="checkbox" class="overwhelmed-tracking-one" name="attr_overwhelmed_tracking_one">			
+					</td>				
+				</tr>				
+			</table>
+		</div>
+		<br>
+		<div class="champion-numberstat-container">
+			<table class="champion-numberstat-table">
+				<tr>
+					<th class="champion-fame-title">Fame</th>	
+					<th class="champion-wealth-title">Wealth</th>	
+					<th class="champion-protection-title">Protection</th>	
+					<th class="champion-wyrd-title">Wyrd</th>				
+				</tr>
+				<tr>
+					<td class="champion-fame-container"><input class="champion-value-fame" name="attr_champion_value_fame" title="@{champion_value_fame}" value="0" style="width: 150px"></td>
+					<td class="champion-wealth-container"><input class="champion-value-wealth" name="attr_champion_value_wealth" title="@{champion_value_wealth}" value="0" style="width: 150px"></td>
+					<td class="champion-protection-container"><input class="champion-value-protection" name="attr_champion_value_protection" title="@{champion_value_protection}" value="0" style="width: 150px"></td>
+					<td class="champion-Wyrd-container"><input class="champion-value-wyrd" name="attr_champion_value_wyrd" title="@{champion_value_wyrd}" value="0" style="width: 150px"></td>							
+				</tr>			
+			</table>	    
+	    </div>	
+	    <br>    
+	    <div class="champion-skills-container">
+	        <table class="champion-skills-table">
+	            <tr class="champion-skills-header-row">
+	                <th class="champion-skill-name-header">Skill</th>
+	                <th class="champion-skill-description-header">Description</th>
+	                <th class="champion-skill-breadth-header">Breadth</th>
+	                <th class="champion-skill-dice-header">Dice</th>
+	                <th class="champion-skill-trials-header">Trials</th>
+	           </tr>
+	           <tr class="champion-skill-one-container">
+	               <td class="champion-skill-one-container-name"><input class="champion-skill-one-name" name="attr_champion_skill_one_name" title="@{champion_skill_one_name}" type="text"></td>
+	               <td class="champion-skill-one-container-description"><textarea class="champion-skill-one-description" name="attr_champion_skill_one_description" title="@{champion_skill_one_description}"></textarea></td>
+	               <td class="champion-skill-one-container-breadth">
+	               	<select class="champion-skill-one-breadth" name="attr_champion_skill_one_breadth" title="@{champion_skill_one_breadth}">
+	               		<option value="broad">Broad</option>
+	               		<option value="standard">Standard</option>
+	               		<option value="narrow">Narrow</option>
+	               		</select></td>
+	               <td class="champion-skill-one-container-dice">
+	               	<input class="champion-skill-one-pool" name="attr_champion_skill_one_pool" title="@{champion_skill_one_pool}" type="number" value="0">
+	                <button type='roll' value='/roll (@{champion_skill_one_pool}+@{modifier_benefit_pool}-@{modifier_hindrance_pool})d6' name='roll_champion_skill_one'></button></td>
+	               <td class="champion-skill-one-container-trials">
+	               	<input type="checkbox" class="champion-skill-one-trialone" name="attr_champion_skill_one_trialone">
+	               	<input type="checkbox" class="champion-skill-one-trialtwo" name="attr_champion_skill_one_trialtwo">
+	               	<input type="checkbox" class="champion-skill-one-trialthree" name="attr_champion_skill_one_trialthree"></td></tr>
+	           <tr class="champion-skill-two-container">
+	               <td class="champion-skill-two-container-name"><input class="champion-skill-two-name" name="attr_champion_skill_two_name" title="@{champion_skill_two_name}" type="text"></td>
+	               <td class="champion-skill-two-container-description"><textarea class="champion-skill-two-description" name="attr_champion_skill_two_description" title="@{champion_skill_two_description}"></textarea></td>
+	               <td class="champion-skill-two-container-breadth">
+	               	<select class="champion-skill-two-breadth" name="attr_champion_skill_two_breadth" title="@{champion_skill_two_breadth}">
+	               		<option value="broad">Broad</option>
+	               		<option value="standard">Standard</option>
+	               		<option value="narrow">Narrow</option>
+	               		</select></td>
+	               <td class="champion-skill-two-container-dice">
+	               	<input class="champion-skill-two-pool" name="attr_champion_skill_two_pool" title="@{champion_skill_two_pool}" type="number" value="0">
+	                <button type='roll' value='/roll (@{champion_skill_two_pool}+@{modifier_benefit_pool}-@{modifier_hindrance_pool})d6' name='roll_champion_skill_two'></button></td>
+	               <td class="champion-skill-two-container-trials">
+	               	<input type="checkbox" class="champion-skill-two-trialone" name="attr_champion_skill_two_trialone">
+	               	<input type="checkbox" class="champion-skill-two-trialtwo" name="attr_champion_skill_two_trialtwo">
+	               	<input type="checkbox" class="champion-skill-two-trialthree" name="attr_champion_skill_two_trialthree"></td></tr>
+	           <tr class="champion-skill-three-container">
+	               <td class="champion-skill-three-container-name"><input class="champion-skill-three-name" name="attr_champion_skill_three_name" title="@{champion_skill_three_name}" type="text"></td>
+	               <td class="champion-skill-three-container-description"><textarea class="champion-skill-three-description" name="attr_champion_skill_three_description" title="@{champion_skill_three_description}"></textarea></td>
+	               <td class="champion-skill-three-container-breadth">
+	               	<select class="champion-skill-three-breadth" name="attr_champion_skill_three_breadth" title="@{champion_skill_three_breadth}">
+	               		<option value="broad">Broad</option>
+	               		<option value="standard">Standard</option>
+	               		<option value="narrow">Narrow</option>
+	               		</select></td>
+	               <td class="champion-skill-three-container-dice">
+	               	<input class="champion-skill-three-pool" name="attr_champion_skill_three_pool" title="@{champion_skill_three_pool}" type="number" value="0">
+	                <button type='roll' value='/roll (@{champion_skill_three_pool}+@{modifier_benefit_pool}-@{modifier_hindrance_pool})d6' name='roll_champion_skill_three'></button></td>
+	               <td class="champion-skill-three-container-trials">
+	               	<input type="checkbox" class="champion-skill-three-trialone" name="attr_champion_skill_three_trialone">
+	               	<input type="checkbox" class="champion-skill-three-trialtwo" name="attr_champion_skill_three_trialtwo">
+	               	<input type="checkbox" class="champion-skill-three-trialthree" name="attr_champion_skill_three_trialthree"></td></tr>
+	           <tr class="champion-skill-four-container">
+	               <td class="champion-skill-four-container-name"><input class="champion-skill-four-name" name="attr_champion_skill_four_name" title="@{champion_skill_four_name}" type="text"></td>
+	               <td class="champion-skill-four-container-description"><textarea class="champion-skill-four-description" name="attr_champion_skill_four_description" title="@{champion_skill_four_description}"></textarea></td>
+	               <td class="champion-skill-four-container-breadth">
+	               	<select class="champion-skill-four-breadth" name="attr_champion_skill_four_breadth" title="@{champion_skill_four_breadth}">
+	               		<option value="broad">Broad</option>
+	               		<option value="standard">Standard</option>
+	               		<option value="narrow">Narrow</option>
+	               		</select></td>
+	               <td class="champion-skill-four-container-dice">
+	               	<input class="champion-skill-four-pool" name="attr_champion_skill_four_pool" title="@{champion_skill_four_pool}" type="number" value="0">
+	                <button type='roll' value='/roll (@{champion_skill_four_pool}+@{modifier_benefit_pool}-@{modifier_hindrance_pool})d6' name='roll_champion_skill_four'></button></td>
+	               <td class="champion-skill-four-container-trials">
+	               	<input type="checkbox" class="champion-skill-four-trialone" name="attr_champion_skill_four_trialone">
+	               	<input type="checkbox" class="champion-skill-four-trialtwo" name="attr_champion_skill_four_trialtwo">
+	               	<input type="checkbox" class="champion-skill-four-trialthree" name="attr_champion_skill_four_trialthree"></td></tr>	               	
+	           <tr class="champion-skill-five-container">
+	               <td class="champion-skill-five-container-name"><input class="champion-skill-five-name" name="attr_champion_skill_five_name" title="@{champion_skill_five_name}" type="text"></td>
+	               <td class="champion-skill-five-container-description"><textarea class="champion-skill-five-description" name="attr_champion_skill_five_description" title="@{champion_skill_five_description}"></textarea></td>
+	               <td class="champion-skill-five-container-breadth">
+	               	<select class="champion-skill-five-breadth" name="attr_champion_skill_five_breadth" title="@{champion_skill_five_breadth}">
+	               		<option value="broad">Broad</option>
+	               		<option value="standard">Standard</option>
+	               		<option value="narrow">Narrow</option>
+	               		</select></td>
+	               <td class="champion-skill-five-container-dice">
+	               	<input class="champion-skill-five-pool" name="attr_champion_skill_five_pool" title="@{champion_skill_five_pool}" type="number" value="0">
+	                <button type='roll' value='/roll (@{champion_skill_five_pool}+@{modifier_benefit_pool}-@{modifier_hindrance_pool})d6' name='roll_champion_skill_five'></button></td>
+	               <td class="champion-skill-five-container-trials">
+	               	<input type="checkbox" class="champion-skill-five-trialone" name="attr_champion_skill_five_trialone">
+	               	<input type="checkbox" class="champion-skill-five-trialtwo" name="attr_champion_skill_five_trialtwo">
+	               	<input type="checkbox" class="champion-skill-five-trialthree" name="attr_champion_skill_five_trialthree"></td></tr>	        
+	           <tr class="champion-skill-six-container">
+	               <td class="champion-skill-six-container-name"><input class="champion-skill-six-name" name="attr_champion_skill_six_name" title="@{champion_skill_six_name}" type="text"></td>
+	               <td class="champion-skill-six-container-description"><textarea class="champion-skill-six-description" name="attr_champion_skill_six_description" title="@{champion_skill_six_description}"></textarea></td>
+	               <td class="champion-skill-six-container-breadth">
+	               	<select class="champion-skill-six-breadth" name="attr_champion_skill_six_breadth" title="@{champion_skill_six_breadth}">
+	               		<option value="broad">Broad</option>
+	               		<option value="standard">Standard</option>
+	               		<option value="narrow">Narrow</option>
+	               		</select></td>
+	               <td class="champion-skill-six-container-dice">
+	               	<input class="champion-skill-six-pool" name="attr_champion_skill_six_pool" title="@{champion_skill_six_pool}" type="number" value="0">
+	                <button type='roll' value='/roll (@{champion_skill_six_pool}+@{modifier_benefit_pool}-@{modifier_hindrance_pool})d6' name='roll_champion_skill_six'></button></td>
+	               <td class="champion-skill-six-container-trials">
+	               	<input type="checkbox" class="champion-skill-six-trialone" name="attr_champion_skill_six_trialone">
+	               	<input type="checkbox" class="champion-skill-six-trialtwo" name="attr_champion_skill_six_trialtwo">
+	               	<input type="checkbox" class="champion-skill-six-trialthree" name="attr_champion_skill_six_trialthree"></td></tr>	
+	           <tr class="champion-skill-seven-container">
+	               <td class="champion-skill-seven-container-name"><input class="champion-skill-seven-name" name="attr_champion_skill_seven_name" title="@{champion_skill_seven_name}" type="text"></td>
+	               <td class="champion-skill-seven-container-description"><textarea class="champion-skill-seven-description" name="attr_champion_skill_seven_description" title="@{champion_skill_seven_description}"></textarea></td>
+	               <td class="champion-skill-seven-container-breadth">
+	               	<select class="champion-skill-seven-breadth" name="attr_champion_skill_seven_breadth" title="@{champion_skill_seven_breadth}">
+	               		<option value="broad">Broad</option>
+	               		<option value="standard">Standard</option>
+	               		<option value="narrow">Narrow</option>
+	               		</select></td>
+	               <td class="champion-skill-seven-container-dice">
+	               	<input class="champion-skill-seven-pool" name="attr_champion_skill_seven_pool" title="@{champion_skill_seven_pool}" type="number" value="0">
+	                <button type='roll' value='/roll (@{champion_skill_seven_pool}+@{modifier_benefit_pool}-@{modifier_hindrance_pool})d6' name='roll_champion_skill_seven'></button></td>
+	               <td class="champion-skill-seven-container-trials">
+	               	<input type="checkbox" class="champion-skill-seven-trialone" name="attr_champion_skill_seven_trialone">
+	               	<input type="checkbox" class="champion-skill-seven-trialtwo" name="attr_champion_skill_seven_trialtwo">
+	               	<input type="checkbox" class="champion-skill-seven-trialthree" name="attr_champion_skill_seven_trialthree"></td></tr>        
+	           <tr class="champion-skill-eight-container">
+	               <td class="champion-skill-eight-container-name"><input class="champion-skill-eight-name" name="attr_champion_skill_eight_name" title="@{champion_skill_eight_name}" type="text"></td>
+	               <td class="champion-skill-eight-container-description"><textarea class="champion-skill-eight-description" name="attr_champion_skill_eight_description" title="@{champion_skill_eight_description}"></textarea></td>
+	               <td class="champion-skill-eight-container-breadth">
+	               	<select class="champion-skill-eight-breadth" name="attr_champion_skill_eight_breadth" title="@{champion_skill_eight_breadth}">
+	               		<option value="broad">Broad</option>
+	               		<option value="standard">Standard</option>
+	               		<option value="narrow">Narrow</option>
+	               		</select></td>
+	               <td class="champion-skill-eight-container-dice">
+	               	<input class="champion-skill-eight-pool" name="attr_champion_skill_eight_pool" title="@{champion_skill_eight_pool}" type="number" value="0">
+	                <button type='roll' value='/roll (@{champion_skill_eight_pool}+@{modifier_benefit_pool}-@{modifier_hindrance_pool})d6' name='roll_champion_skill_eight'></button></td>
+	               <td class="champion-skill-eight-container-trials">
+	               	<input type="checkbox" class="champion-skill-eight-trialone" name="attr_champion_skill_eight_trialone">
+	               	<input type="checkbox" class="champion-skill-eight-trialtwo" name="attr_champion_skill_eight_trialtwo">
+	               	<input type="checkbox" class="champion-skill-eight-trialthree" name="attr_champion_skill_eight_trialthree"></td></tr>
+	        </table>
+	    </div>
+	    <br>
+	    <div class="champion-feature-container">
+	    	<div class="feature-traits-container">
+				<label for="feature-traits">Traits</label>
+				<textarea class="feature-traits" name="attr_feature_traits" title="@{feature_traits}"></textarea></div>
+			<div class="feature-traits-container">
+				<label for="feature-resources">Resources</label>
+				<textarea class="feature-resources" name="attr_feature_resources" title="@{feature_resources}"></textarea></div>
+		</div>
+	    <div class="special-rules-container">
+			<label for="special-rules">Notes & Special Rules</label>
+			<textarea class="special-rules" name="attr_special_rules" title="@{special_rules}"></textarea></div>
+		</div>
+	</div>
+</html>
